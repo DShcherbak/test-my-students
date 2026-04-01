@@ -1,155 +1,163 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наша футбольна команда</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>Seminar 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .main {
+                padding: 20px;
+                margin-top: 20px;
+                width: 750px;
+                background-color: rgba(238, 238, 238);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 10px;
+
+
+                .content {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    border: none;
+
+                    .gray {
+                        background-color: rgb(211, 211, 211);
+                    }
+
+                    .card {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 10px;
+                        border-radius: 0;
+
+                        img {
+                            height: 200px;
+                            width: 200px;
+                            border-radius: 50%;
+                            border: 2px solid red;
+                            object-position: top;
+                            object-fit: cover;
+                        }
+
+                        .social {
+                            display: flex;
+                            gap: 15px; 
+                            justify-content: center;
+                            margin-top: 10px;
+
+                            .btn {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%; 
+                                background-color: #4285f4; 
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: white;
+                                text-decoration: none;
+                                font-weight: bold;
+                                font-family: Arial, sans-serif;
+                                font-size: 18px;
+                                transition: 0.3s;
+                            }
+
+                            .btn:hover {
+                                background-color: #3367d6; 
+                            }
+
+                            
+                            .btn-google::before {
+                                content: "g+";
+                            }
+
+                            .btn-facebook::before {
+                                content: "f";
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        .player-card {
-            transition: 0.3s;
-            padding: 20px;
-        }
+        @media (max-width: 750px) {
+            body .main {
+                width: 250px;
 
-        .player-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .highlight {
-            background-color: #ececec;
-        }
-
-        .header-img {
-            width: 260px;
-            height: 260px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #0057b7;
-            margin-bottom: 20px;
-        }
-
-        .tab-logos {
-            width: 45px;
-            height: 45px;
-            transition: 0.3s;
-        }
-
-        .tab-logos:hover {
-            transform: scale(1.1);
-        }
-
-        h1 {
-            font-weight: 700;
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
     </style>
 </head>
 
 <body>
-
-<div class="container text-center mt-4">
-    <h1>Наша футбольна команда ⚽</h1>
-
-    <p>
-        Ми — сучасна українська футбольна команда, яка представляє країну на міжнародній арені.
-        Наші гравці виступають у провідних європейських клубах та демонструють високий рівень гри.
-    </p>
-
-    <p>
-        Завдяки таланту, дисципліні та командному духу українські футболісти досягають значних результатів
-        та надихають нове покоління спортсменів.
-    </p>
-</div>
-
-<div class="container mt-5">
-    <div class="row text-center justify-content-center">
-
-        <!-- Zinchenko -->
-        <div class="col-lg-4 col-md-6 col-12 player-card">
-            <img class="header-img"
-                 src="https://renews.com.ua/wp-content/uploads/2026/01/zinchenko-perehodit-u-ajaks-shho-vidomo-9d5d833.jpg"
-                 onerror="this.src='https://picsum.photos/300?random=1'">
-
-            <h2>Олександр Зінченко</h2>
-
-            <p>
-                Універсальний гравець Arsenal та збірної України.
-                Відомий технікою, точними передачами та контролем гри.
-            </p>
-
-            <div>
-                <a href="https://www.arsenal.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
-                </a>
+    <div class="main">
+        <div class="text">
+            <h2>Наша команда</h2>
+            <p>Ми три козаки із Запорізької Січі багато мандруємо по світу, спілкуємось з людьми з інших країн та епох.
+                Навіть зустрічаємось з інопланетянами.</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdmBfA45MOvVcDCHAzJMe59CJFHi_x1jNZ8FKbAzeu7HZltWHW"
+                    ; alt="Oko">
+                <p class="bold">Козак Око</p>
+                <p>Маленький козак, але бадьорий і войовничий</p>
+                <div class="social">
+                    <a href="#" class="btn btn-google"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                </div>
+            </div>
+            <div class="card gray">
+                <img src="https://images.prom.ua/3333294226_w640_h640_trafaret-dlya-pechenya.jpg" ; alt="gray">
+                <p class="bold">Козак Грай</p>
+                <p>Отаман нашої команди. Смітливий так кмітливий козак</p>
+                <div class="social">
+                    <a href="#" class="btn btn-google"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.prom.ua/3333291751_w1280_h640_trafaret-dlya-pechenya.jpg"
+                    ; alt="tur">
+                <p class="bold">Козак Тур</p>
+                <p>Здоровий та сильний козак. Часто буває сором'язливим</p>
+                <div class="social">
+                    <a href="#" class="btn btn-google"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                    <a href="#" class="btn btn-facebook"></a>
+                </div>
             </div>
         </div>
-
-        <!-- Mudryk -->
-        <div class="col-lg-4 col-md-6 col-12 player-card highlight">
-            <img class="header-img"
-                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTg9klg0U3DJ9lPHW6qBt7LKJ4g2uXrrNHlTmWxF87nzK88hzX1Ujsn6fsNbdfj9iLvPiZkIAnFqBIqcAqAsI0-XMiphX8woIXTIS6A_I&s=10"
-                 onerror="this.src='https://picsum.photos/300?random=2'">
-
-            <h2>Михайло Мудрик</h2>
-
-            <p>
-                Швидкий вінгер Chelsea.
-                Один із найперспективніших молодих футболістів України.
-            </p>
-
-            <div>
-                <a href="https://www.chelseafc.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
-                </a>
-            </div>
-        </div>
-
-        <!-- Dovbyk -->
-        <div class="col-lg-4 col-md-6 col-12 player-card">
-            <img class="header-img"
-                 src="https://renews.com.ua/wp-content/uploads/2025/08/artem-dovbik-mozhe-perejti-z-romi-v-viljareal-detali-2a020f9.jpg"
-                 onerror="this.src='https://picsum.photos/300?random=3'">
-
-            <h2>Артем Довбик</h2>
-
-            <p>
-                Потужний нападник Girona.
-                Відомий результативністю та грою в штрафному майданчику.
-            </p>
-
-            <div>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
-                </a>
-            </div>
-        </div>
-
     </div>
-</div>
+
 
 </body>
+
 </html>
