@@ -1,107 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <title>Семінар 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <style>
         body {
-            background-color: #d8bfd8;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .block {
-            background-color: #e6e6fa
+        
+        .header-section {
+            padding: 10px 15px 10px; 
         }
-        .block2 {
-            background-color: #dda0dd
+        
+        .cossack-card {
+            padding: 25px 15px 35px;
+            text-align: center;
+            height: 100%;
         }
-        .card {
-            border-radius: 0;
+        
+        .card-bg-white {
+            background-color: #ffffff;
         }
-        .img-main {
-            border-radius: 50%;
-            border: 4px solid #da70d6;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+        
+        .card-bg-gray {
+            background-color: #d1d1d1;
+        }
+
+        .cossack-img {
+            width: 85%; 
+            max-width: 320px;
+            height: auto;
+            aspect-ratio: 1 / 1; 
             display: block;
-            margin: auto;
-            background-color: #ffffff
+            margin: 0 auto 20px auto;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 2px solid red; 
         }
-        .btn-socials {
-            background-color: #da70d6;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 30px;
+
+        .cossack-name {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .cossack-desc {
+            font-size: 1rem;
+            margin-bottom: 20px; 
+            min-height: 48px; 
+        }
+
+        .social-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            width: 60px; 
+            height: 60px; 
+            background-color: #3b95f5; 
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 34px; 
+            margin: 0 10px;
+            transition: opacity 0.3s;
         }
-        .btn:hover {
-            background-color: #ede7dc;
+        
+        .social-btn:hover {
+            opacity: 0.8;
+        }
+
+        .card-bg-white .social-btn {
+            color: #ffffff; 
+        }
+        .card-bg-gray .social-btn {
+            color: #d1d1d1; 
         }
     </style>
 </head>
-<body class="text-center">
-<div class="container">
-    <h2 class="mt-5 mb-3">Our team</h2>
-    <p>A team of guinea pigs lives together in a cozy space, exploring their surroundings and enjoying daily routines. Each guinea pig has a special role, from curious explorers to calm companions. They communicate through gentle squeaks, soft purring sounds, and playful interactions.</p>
-    <div class="row block">
-        <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <img src="https://i.pinimg.com/736x/5d/ec/27/5dec27f8934725032db9769c2dbea946.jpg" class="img-main mb-3 mt-2" alt="Guinea pig">
-            <h4 class="card-title">Orange</h4>
-            <p>Orange is cheerful and always the first to discover new snacks and cozy spots to rest</p>
-            <div class="mb-2">
-                <a href="https://www.google.com" class="btn" target="_blank">
-                    <i class="bi bi-google btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
-            </div>
+<body>
+
+    <div class="container py-4" style="max-width: 1100px;">
+        
+        <div class="text-center header-section">
+            <h2 class="fw-bold mb-3">Наша команда</h2>
+            <p class="fs-6 mx-auto" style="max-width: 800px; color: #333;">
+                Ми три козаки із Запорізької Січі. Багато мандруємо по світу, спілкуємось з людьми з різних країн та епох.<br>
+                Навіть зустрічаємось з інопланетянами
+            </p>
         </div>
 
-        <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 block2">
-            <img src="https://i.pinimg.com/736x/00/d5/65/00d5652a8c4c3a10e110eb4157589a52.jpg" class="img-main img-main2 mb-3 mt-2" alt="Guinea pig">
-            <h4 class="card-title">Flower</h4>
-            <p>Flower is gentle and calm, bringing peace to the group while enjoying sunny days</p>
-            <div class="mb-2">
-                <a href="https://www.google.com" class="btn" target="_blank">
-                    <i class="bi bi-google btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
+        <div class="row g-0 shadow-sm">
+            
+            <div class="col-md-4">
+                <div class="cossack-card card-bg-white">
+                    <img src="https://i.pinimg.com/736x/54/38/d2/5438d2b83144da8d2224d233b8764b72.jpg" alt="Козак Око" class="cossack-img">
+                    <div class="cossack-name">Козак Око</div>
+                    <p class="cossack-desc">Маленький козак, але бадьорий<br>та войовничий</p>
+                    <div>
+                        <a href="#" class="social-btn"><i class="bi bi-google"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <img src="https://i.pinimg.com/1200x/80/a1/2f/80a12f14839ab92afc5ee28d8b53b449.jpg" class="img-main mb-3 mt-2" alt="Guinea pig">
-            <h4 class="card-title">Pumpkin</h4>
-            <p>Pumpkin is playful and curious, always finding fun in the simplest things</p>
-            <div class="mb-2">
-                <a href="https://www.google.com" class="btn" target="_blank">
-                    <i class="bi bi-google btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
-                <a href="https://www.facebook.com" class="btn" target="_blank">
-                    <i class="bi bi-facebook btn-socials"></i>
-                </a>
+            <div class="col-md-4">
+                <div class="cossack-card card-bg-gray">
+                    <img src="https://i.pinimg.com/736x/56/0c/3f/560c3f7adc7f0b9b3edd2685031fd977.jpg" alt="Козак Грай" class="cossack-img">
+                    <div class="cossack-name">Козак Грай</div>
+                    <p class="cossack-desc">Отаман нашої команди.<br>Спокійний та кмітливий козак</p>
+                    <div>
+                        <a href="#" class="social-btn"><i class="bi bi-google"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="cossack-card card-bg-white">
+                    <img src="https://i.pinimg.com/1200x/1c/9f/03/1c9f033d81b411b763993403cd72e855.jpg" alt="Козак Тур" class="cossack-img">
+                    <div class="cossack-name">Козак Тур</div>
+                    <p class="cossack-desc">Здоровий та сильний козак. Часто<br>буває сором'язливим</p>
+                    <div>
+                        <a href="#" class="social-btn"><i class="bi bi-google"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
