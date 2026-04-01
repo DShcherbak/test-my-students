@@ -3,108 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seminar 5</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <title>Наша футбольна команда</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
-            background-color: #eaeded; 
-            font-family: Arial, sans-serif;
-        }
-        
-        .team-section {
-            padding: 50px 15px;
-            max-width: 1000px;
+            background-color: #f8f9fa;
         }
 
-        .cossack-img {
-            width: 100%;
-            max-width: 180px;
-            aspect-ratio: 1 / 1;
+        .player-card {
+            transition: 0.3s;
+            padding: 20px;
+        }
+
+        .player-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .highlight {
+            background-color: #ececec;
+        }
+
+        .header-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
             object-fit: cover;
-            border: 2px solid red; 
-            background-color: white;
+            border: 3px solid #0057b7;
+            margin-bottom: 20px;
         }
 
-        .social-icon {
+        .tab-logos {
             width: 45px;
             height: 45px;
-            background-color: #4285f4; 
-            color: white;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin: 0 5px;
-            transition: opacity 0.3s;
+            transition: 0.3s;
         }
 
-        .social-icon:hover {
-            color: white;
-            opacity: 0.8;
+        .tab-logos:hover {
+            transform: scale(1.1);
         }
 
-        .bg-custom-white {
-            background-color: #ffffff;
-        }
-        
-        .bg-custom-grey {
-            background-color: #cccccc;
+        h1 {
+            font-weight: 700;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container team-section">
-    
-    <div class="row mb-5">
-        <div class="col-12 text-center">
-            <h2 class="fw-bold mb-3">Наша команда</h2>
-            <p class="mb-0 mx-auto" style="max-width: 1000px; font-size: 1rem; color: #333;">
-                Ми три козаки із Запорізької Січі. Багато мандруємо по світу, спілкуємось з людьми з різних країн та епох.<br>
-                Навіть зустрічаємось з інопланетянами
+<div class="container text-center mt-4">
+    <h1>Наша футбольна команда ⚽</h1>
+
+    <p>
+        Ми — сучасна українська футбольна команда, яка представляє країну на міжнародній арені.
+        Наші гравці виступають у провідних європейських клубах та демонструють високий рівень гри.
+    </p>
+
+    <p>
+        Завдяки таланту, дисципліні та командному духу українські футболісти досягають значних результатів
+        та надихають нове покоління спортсменів.
+    </p>
+</div>
+
+<div class="container mt-5">
+    <div class="row text-center justify-content-center">
+
+        <!-- Zinchenko -->
+        <div class="col-lg-4 col-md-6 col-12 player-card">
+            <img class="header-img"
+                 src="https://renews.com.ua/wp-content/uploads/2026/01/zinchenko-perehodit-u-ajaks-shho-vidomo-9d5d833.jpg"
+                 onerror="this.src='https://picsum.photos/300?random=1'">
+
+            <h2>Олександр Зінченко</h2>
+
+            <p>
+                Універсальний гравець Arsenal та збірної України.
+                Відомий технікою, точними передачами та контролем гри.
             </p>
-        </div>
-    </div>
 
-    <div class="row text-center g-0 shadow-sm"> <div class="col-md-4 bg-custom-white py-5 px-3">
-            <img src="https://i.pinimg.com/originals/55/c0/f8/55c0f8a8c5184b8d4e486792e5a05487.png" class="rounded-circle cossack-img mb-4">
-            <h4 class="fw-bold mb-3">Козак Око</h4>
-            <p class="mb-4 text-muted" style="min-height: 48px;">Маленький козак, але бадьорий та войовничий</p>
-            <div class="d-flex justify-content-center">
-                <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <div>
+                <a href="https://www.arsenal.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
+                </a>
             </div>
         </div>
 
-        <div class="col-md-4 bg-custom-grey py-5 px-3">
-            <img src="https://upload.wikimedia.org/wikipedia/uk/thumb/d/dc/%D0%9A%D0%BE%D0%B7%D0%B0%D0%BA_%D0%93%D1%80%D0%B0%D0%B9.png/250px-%D0%9A%D0%BE%D0%B7%D0%B0%D0%BA_%D0%93%D1%80%D0%B0%D0%B9.png" class="rounded-circle cossack-img mb-4">
-            <h4 class="fw-bold mb-3">Козак Грай</h4>
-            <p class="mb-4 text-muted" style="min-height: 48px;">Отаман нашої команди. Спокійний та кмітливий козак</p>
-            <div class="d-flex justify-content-center">
-                <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <!-- Mudryk -->
+        <div class="col-lg-4 col-md-6 col-12 player-card highlight">
+            <img class="header-img"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTg9klg0U3DJ9lPHW6qBt7LKJ4g2uXrrNHlTmWxF87nzK88hzX1Ujsn6fsNbdfj9iLvPiZkIAnFqBIqcAqAsI0-XMiphX8woIXTIS6A_I&s=10"
+                 onerror="this.src='https://picsum.photos/300?random=2'">
+
+            <h2>Михайло Мудрик</h2>
+
+            <p>
+                Швидкий вінгер Chelsea.
+                Один із найперспективніших молодих футболістів України.
+            </p>
+
+            <div>
+                <a href="https://www.chelseafc.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
+                </a>
             </div>
         </div>
 
-        <div class="col-md-4 bg-custom-white py-5 px-3">
-            <img src="https://images.1plus1.video/playlist-1/92559/eda219796e174d56a3a8b4ea0090aa31.490x520.jpg" class="rounded-circle cossack-img mb-4">
-            <h4 class="fw-bold mb-3">Козак Тур</h4>
-            <p class="mb-4 text-muted" style="min-height: 48px;">Здоровий та сильний козак. Часто буває сором'язливим</p>
-            <div class="d-flex justify-content-center">
-                <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <!-- Dovbyk -->
+        <div class="col-lg-4 col-md-6 col-12 player-card">
+            <img class="header-img"
+                 src="https://renews.com.ua/wp-content/uploads/2025/08/artem-dovbik-mozhe-perejti-z-romi-v-viljareal-detali-2a020f9.jpg"
+                 onerror="this.src='https://picsum.photos/300?random=3'">
+
+            <h2>Артем Довбик</h2>
+
+            <p>
+                Потужний нападник Girona.
+                Відомий результативністю та грою в штрафному майданчику.
+            </p>
+
+            <div>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/football2.png">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/youtube-play.png">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="tab-logos" src="https://img.icons8.com/color/96/instagram-new.png">
+                </a>
             </div>
         </div>
 
     </div>
 </div>
+
 </body>
 </html>
