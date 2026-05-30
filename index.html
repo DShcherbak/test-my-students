@@ -1,155 +1,94 @@
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наша команда - Козаки</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Семінар 5 Порви Катерини</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F0F4F8;
         }
 
-        .team-section {
-            padding: 60px 0;
-        }
-
-        .team-title {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .team-description {
-            max-width: 800px;
-            margin: 0 auto 50px;
-            color: #555;
-        }
-   
-        .member-card {
-            padding: 40px 20px;
-            height: 100%;
-            transition: all 0.3s ease;
-        }
-
-        .bg-gray {
-            background-color: #e9ecef;
-        }
-
-        .bg-white-card {
-            background-color: #ffffff;
-        }
-
-        .member-img {
+        .img-main {
+            border-radius: 50%;
             width: 200px;
             height: 200px;
-            border-radius: 50%;
-            border: 3px solid #ff0000;
             object-fit: cover;
-            margin-bottom: 25px;
-            padding: 5px;
-            background-color: transparent;
+            border: 4px solid #4A90E2;
+            display: block;
+            margin: auto;
         }
 
-        .member-name {
-            font-weight: 700;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .member-text {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 25px;
-            min-height: 50px;
-        }
-
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background-color: #4285F4;
-            color: white;
+        .img-socials {
             border-radius: 50%;
-            margin: 0 8px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: transform 0.2s, background-color 0.2s;
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
         }
 
-        .social-links a:hover {
-            transform: scale(1.1);
-            background-color: #3367d6;
-        }
-
-        @media (max-width: 767px) {
-            .member-card {
-                border-bottom: 1px solid #ccc;
-            }
-            .member-img {
-                width: 160px;
-                height: 160px;
-            }
+        .btn:hover {
+            background-color: #D9E2EC;
         }
     </style>
 </head>
-<body>
-
-<section class="team-section text-center">
+<body class="text-center">
     <div class="container">
-        <h1 class="team-title">Наша команда</h1>
-        <p class="team-description">
-            Ми три козаки із Запорізької Січі. Багато мандруємо по світу, спілкуємось з людьми з різних країн та епох. 
-            Навіть зустрічаємось з інопланетянами.
-        </p>
+        <h2 class="mt-5 mb-3">Наша команда песиків</h2>
+        <p>Команда собак працює разом, щоб охороняти двір та шукати пригоди. Кожен песик має свою унікальну роль: від розвідки до захисту території. Вони спілкуються за допомогою дзвінкого гавкоту та радісного виляння хвостом.</p>
+        <div class="row">
 
-        <div class="row g-0 shadow">
-            
-            <div class="col-md-4">
-                <div class="member-card bg-white-card">
-                    <img src="https://i.pinimg.com/736x/c7/43/c9/c743c92b56655ffe818d85c47e56d12b.jpg" alt="Козак Око" class="member-img">
-                    <h3 class="member-name">Козак Око</h3>
-                    <p class="member-text">Маленький козак, але бадьорий та войовничий</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="background-color: #BCCCDC;">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=400&auto=format&fit=crop" class="img-main mb-3 mt-2" alt="Dog">
+                <h4 class="card-title">Барні</h4>
+                <p>Барні дуже допитливий і завжди першим біжить за кинутим м'ячиком на нових прогулянках.</p>
+                <div class="mb-2">
+                    <a href="https://www.facebook.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=118490&format=png&color=4A90E2" alt="Facebook" class="img-socials">
+                    </a>
+                    <a href="https://www.instagram.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=84884&format=png&color=4A90E2" alt="Instagram" class="img-socials">
+                    </a>
+                    <a href="https://www.pinterest.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=87072&format=png&color=4A90E2" alt="Pinterest" class="img-socials">
+                    </a>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="member-card bg-gray">
-                    <img src="https://upload.wikimedia.org/wikipedia/uk/d/dc/%D0%9A%D0%BE%D0%B7%D0%B0%D0%BA_%D0%93%D1%80%D0%B0%D0%B9.png" alt="Козак Грай" class="member-img">
-                    <h3 class="member-name">Козак Грай</h3>
-                    <p class="member-text">Отаман нашої команди. Спокійний та кмітливий козак</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="background-color: #9FB3C8;">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&auto=format&fit=crop" class="img-main mb-3 mt-2" alt="Dog">
+                <h4 class="card-title">Рекс</h4>
+                <p>Рекс — найшвидший пес у команді, який завжди веде за собою під час веселих забігів.</p>
+                <div class="mb-2">
+                    <a href="https://www.facebook.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=118490&format=png&color=4A90E2" alt="Facebook" class="img-socials">
+                    </a>
+                    <a href="https://www.instagram.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=84884&format=png&color=4A90E2" alt="Instagram" class="img-socials">
+                    </a>
+                    <a href="https://www.pinterest.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=87072&format=png&color=4A90E2" alt="Pinterest" class="img-socials">
+                    </a>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="member-card bg-white-card">
-                    <img src="https://img.geocaching.com/track/large/5cc047e1-c764-425c-a074-1c4fca7279b7.png" alt="Козак Тур" class="member-img">
-                    <h3 class="member-name">Козак Тур</h3>
-                    <p class="member-text">Здоровий та сильний козак. Часто буває сором'язливим</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="background-color: #BCCCDC;">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=400&auto=format&fit=crop" class="img-main mb-3 mt-2" alt="Dog">
+                <h4 class="card-title">Луна</h4>
+                <p>Луна — розумна лідерка, яка завжди знаходить нові й цікаві стежки для дослідження.</p>
+                <div class="mb-2">
+                    <a href="https://www.facebook.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=118490&format=png&color=4A90E2" alt="Facebook" class="img-socials">
+                    </a>
+                    <a href="https://www.instagram.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=84884&format=png&color=4A90E2" alt="Instagram" class="img-socials">
+                    </a>
+                    <a href="https://www.pinterest.com" class="btn" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=87072&format=png&color=4A90E2" alt="Pinterest" class="img-socials">
+                    </a>
                 </div>
             </div>
 
         </div>
     </div>
-</section>
-
 </body>
 </html>
